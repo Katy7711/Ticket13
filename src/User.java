@@ -11,8 +11,4 @@ public class User {
         this.age = age;
     }
 
-    public String sortUser (Collection<User> users){
-        String user = users.stream().distinct().sorted().reduce((first,second)->second).get().toString();
-        return user;
-    }
 }
